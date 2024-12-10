@@ -1,0 +1,22 @@
+VD1 = float(input())
+VD2 = float(input())
+VD3 = float(input())
+SALAR = float(input())
+TOTVEN = VD1 + VD2 + VD3
+PORVEN = 0.33 * TOTVEN
+if VD1 > PORVEN:
+    SALAR1 = SALAR + 0.2 * SALAR
+if not VD1 > PORVEN:
+    SALAR1 = SALAR
+if VD2 > PORVEN:
+    SALAR2 = SALAR + 0.2 * SALAR
+if not VD2 > PORVEN:
+    SALAR2 = SALAR
+if VD3 > PORVEN:
+    SALAR3 = SALAR + 0.2 * SALAR
+if not VD3 > PORVEN:
+    SALAR3 = SALAR
+
+print(f"SALARIO VENDEDORES DEPTO. 1: {SALAR1}\nSALARIO VENDEDORES DEPTO. 2: {SALAR2}\nSALARIO VENDEDORES DEPTO. 3: {SALAR3}")
+
+    
